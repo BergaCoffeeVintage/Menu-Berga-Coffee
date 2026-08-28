@@ -1,13 +1,13 @@
 const pages = [
-  { file: "assets/01-toast-sweet-endings.jpg", title: "Toast & Oven Bakes · Sweet Endings" },
-  { file: "assets/02-french-fries-timeless-bites.jpg", title: "French Fries Series · Timeless Bites" },
-  { file: "assets/03-kitchen-pasta.jpg", title: "From Berga's Kitchen · Pasta Collection" },
-  { file: "assets/04-signature-coffee-tea.jpg", title: "Signature Non-Coffee · Coffee · Tea" },
-  { file: "assets/05-matcha-choco-frappe.jpg", title: "Matcha · Choco · Frappe Series" },
-  { file: "assets/06-black-white-handbrew.jpg", title: "Black · White · Hand Brew Collection" },
-  { file: "assets/07-the-kitchen.jpg", title: "The Kitchen · Comfort Every Bites" },
+  { file: "assets/09-daytime-specials.jpg", title: "Daytime Specials · 08.00–14.00 WIB" },
   { file: "assets/08-the-brew-room.jpg", title: "The Brew Room · Sip to Remember" },
-  { file: "assets/09-daytime-specials.jpg", title: "Daytime Specials · 08.00–14.00 WIB" }
+  { file: "assets/06-black-white-handbrew.jpg", title: "Black · White · Hand Brew Collection" },
+  { file: "assets/05-matcha-choco-frappe.jpg", title: "Matcha · Choco · Frappe Series" },
+  { file: "assets/04-signature-coffee-tea.jpg", title: "Signature Non-Coffee · Coffee · Tea" },
+  { file: "assets/07-the-kitchen.jpg", title: "The Kitchen · Comfort Every Bites" },
+  { file: "assets/03-kitchen-pasta.jpg", title: "From Berga's Kitchen · Pasta Collection" },
+  { file: "assets/02-french-fries-timeless-bites.jpg", title: "French Fries Series · Timeless Bites" },
+  { file: "assets/01-toast-sweet-endings.jpg", title: "Toast & Oven Bakes · Sweet Endings" }
 ];
 
 const pagesEl = document.getElementById("pages");
