@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
- <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#00563f">
   <meta name="description" content="Digital menu Berga Coffee — Vintage and Timeless.">
@@ -13,8 +13,15 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- =========================
+       NAVBAR
+       ========================= -->
+
   <header class="topbar">
+
     <a class="brand" href="#top" aria-label="Berga Coffee">
       <span>
         <strong>berga.</strong>
@@ -22,82 +29,482 @@
       </span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Buka navigasi" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Buka navigasi"
+      aria-expanded="false"
+      type="button"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
     <nav id="nav">
       <a href="#menu">MENU</a>
+
       <a href="#specials">SPECIALS</a>
 
-      <!-- Reservasi -->
-      <a
-        href="https://wa.me/62XXXXXXXXXX?text=Halo%20Berga%20Coffee%2C%20saya%20ingin%20melakukan%20reservasi."
-        target="_blank"
-        rel="noopener noreferrer"
-        class="reservation-link"
-      >
+      <!-- RESERVASI -->
+      <a href="#reservation" class="reservation-link">
         RESERVASI
       </a>
 
-      <button id="fullscreenBtn" type="button">FULLSCREEN</button>
+      <button id="fullscreenBtn" type="button">
+        FULLSCREEN
+      </button>
     </nav>
+
   </header>
 
+
+  <!-- =========================
+       MAIN
+       ========================= -->
+
   <main id="top">
+
+    <!-- HERO -->
+
     <section class="hero">
+
       <div class="hero-line"></div>
-      <div class="hero-logo">berga.<small>coffee</small></div>
+
+      <div class="hero-logo">
+        berga.
+        <small>coffee</small>
+      </div>
+
       <p>VINTAGE AND TIMELESS</p>
+
       <h1>THE MENU</h1>
-      <p class="hero-subtitle">Comfort every bites · Sip to remember</p>
-      <a class="scroll-btn" href="#menu">EXPLORE MENU ↓</a>
+
+      <p class="hero-subtitle">
+        Comfort every bites · Sip to remember
+      </p>
+
+      <a class="scroll-btn" href="#menu">
+        EXPLORE MENU ↓
+      </a>
+
       <div class="hero-line"></div>
+
     </section>
 
+
+    <!-- =========================
+         MENU BOOK
+         ========================= -->
+
     <section class="viewer" id="menu">
+
       <div class="section-heading">
+
         <span>BERGA COFFEE</span>
+
         <h2>MENU BOOK</h2>
-        <p>Tap a page to view it larger.</p>
+
+        <p>
+          Tap a page to view it larger.
+        </p>
+
       </div>
 
       <div class="pages" id="pages">
         <!-- Pages inserted by JavaScript -->
       </div>
+
     </section>
+
+
+    <!-- =========================
+         DAYTIME SPECIALS
+         ========================= -->
 
     <section class="special-preview" id="specials">
+
       <div>
-        <p class="eyebrow">EVERY DAY · 08.00–14.00 WIB</p>
-        <h2>DAYTIME<br>SPECIALS</h2>
-        <p>Enjoy your favorite menu at special prices during our Daytime Specials.</p>
+
+        <p class="eyebrow">
+          EVERY DAY · 08.00–14.00 WIB
+        </p>
+
+        <h2>
+          DAYTIME<br>
+          SPECIALS
+        </h2>
+
+        <p>
+          Enjoy your favorite menu at special prices
+          during our Daytime Specials.
+        </p>
+
       </div>
-      <button class="gold-button" id="specialBtn" type="button">VIEW SPECIALS</button>
+
+      <button
+        class="gold-button"
+        id="specialBtn"
+        type="button"
+      >
+        VIEW SPECIALS
+      </button>
+
     </section>
+
+
+    <!-- =========================
+         RESERVATION SECTION
+         ========================= -->
+
+    <section class="reservation-section" id="reservation">
+
+      <div class="reservation-container">
+
+        <div class="reservation-heading">
+
+          <span>BERGA COFFEE</span>
+
+          <h2>
+            MAKE A<br>
+            RESERVATION
+          </h2>
+
+          <p>
+            Reserve your table and enjoy your time
+            at Berga Coffee.
+          </p>
+
+        </div>
+
+
+        <!-- FORM RESERVASI -->
+
+        <form id="reservationForm" class="reservation-form">
+
+          <!-- Nama -->
+
+          <div class="form-group">
+
+            <label for="guestName">
+              NAMA
+            </label>
+
+            <input
+              type="text"
+              id="guestName"
+              name="guestName"
+              placeholder="Masukkan nama lengkap"
+              required
+            >
+
+          </div>
+
+
+          <!-- Nomor WhatsApp -->
+
+          <div class="form-group">
+
+            <label for="guestPhone">
+              NOMOR WHATSAPP
+            </label>
+
+            <input
+              type="tel"
+              id="guestPhone"
+              name="guestPhone"
+              placeholder="Contoh: 081234567890"
+              required
+            >
+
+          </div>
+
+
+          <!-- Hari -->
+
+          <div class="form-group">
+
+            <label for="reservationDay">
+              HARI
+            </label>
+
+            <select
+              id="reservationDay"
+              name="reservationDay"
+              required
+            >
+
+              <option value="">
+                Pilih hari
+              </option>
+
+              <option>Senin</option>
+              <option>Selasa</option>
+              <option>Rabu</option>
+              <option>Kamis</option>
+              <option>Jumat</option>
+              <option>Sabtu</option>
+              <option>Minggu</option>
+
+            </select>
+
+          </div>
+
+
+          <!-- Tanggal -->
+
+          <div class="form-group">
+
+            <label for="reservationDate">
+              TANGGAL
+            </label>
+
+            <input
+              type="date"
+              id="reservationDate"
+              name="reservationDate"
+              required
+            >
+
+          </div>
+
+
+          <!-- Jam -->
+
+          <div class="form-group">
+
+            <label for="reservationTime">
+              JAM
+            </label>
+
+            <input
+              type="time"
+              id="reservationTime"
+              name="reservationTime"
+              required
+            >
+
+          </div>
+
+
+          <!-- Ruangan -->
+
+          <div class="form-group">
+
+            <label for="room">
+              RUANGAN
+            </label>
+
+            <select
+              id="room"
+              name="room"
+              required
+            >
+
+              <option value="">
+                Pilih ruangan
+              </option>
+
+              <option value="Indoor">
+                Indoor
+              </option>
+
+              <option value="Outdoor">
+                Outdoor
+              </option>
+
+              <option value="Private Room">
+                Private Room
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- Jumlah Orang -->
+
+          <div class="form-group">
+
+            <label for="guestCount">
+              JUMLAH ORANG
+            </label>
+
+            <input
+              type="number"
+              id="guestCount"
+              name="guestCount"
+              min="1"
+              placeholder="Contoh: 4"
+              required
+            >
+
+          </div>
+
+
+          <!-- Catatan -->
+
+          <div class="form-group full-width">
+
+            <label for="notes">
+              CATATAN TAMBAHAN
+            </label>
+
+            <textarea
+              id="notes"
+              name="notes"
+              rows="4"
+              placeholder="Contoh: Request meja dekat jendela..."
+            ></textarea>
+
+          </div>
+
+
+          <!-- Admin -->
+
+          <div class="form-group full-width">
+
+            <label>
+              PILIH ADMIN RESERVASI
+            </label>
+
+            <div class="admin-options">
+
+              <label class="admin-option">
+
+                <input
+                  type="radio"
+                  name="admin"
+                  value="6287722493288"
+                  required
+                >
+
+                <span>
+                  ADMIN 1
+                </span>
+
+              </label>
+
+
+              <label class="admin-option">
+
+                <input
+                  type="radio"
+                  name="admin"
+                  value="6281389962021"
+                >
+
+                <span>
+                  ADMIN 2
+                </span>
+
+              </label>
+
+            </div>
+
+          </div>
+
+
+          <!-- Submit -->
+
+          <div class="form-submit full-width">
+
+            <button
+              type="submit"
+              class="reservation-submit"
+            >
+              KIRIM RESERVASI →
+            </button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </section>
+
   </main>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="close" id="closeBtn" aria-label="Tutup">×</button>
-    <button class="lightbox-arrow prev" id="prevBtn" aria-label="Halaman sebelumnya">‹</button>
+
+  <!-- =========================
+       LIGHTBOX
+       ========================= -->
+
+  <div
+    class="lightbox"
+    id="lightbox"
+    aria-hidden="true"
+  >
+
+    <button
+      class="close"
+      id="closeBtn"
+      aria-label="Tutup"
+      type="button"
+    >
+      ×
+    </button>
+
+    <button
+      class="lightbox-arrow prev"
+      id="prevBtn"
+      aria-label="Halaman sebelumnya"
+      type="button"
+    >
+      ‹
+    </button>
 
     <div class="lightbox-content">
-      <img id="lightboxImage" src="" alt="">
+
+      <img
+        id="lightboxImage"
+        src=""
+        alt=""
+      >
+
       <div class="lightbox-caption">
+
         <span id="pageNumber"></span>
+
         <strong id="pageTitle"></strong>
+
       </div>
+
     </div>
 
-    <button class="lightbox-arrow next" id="nextBtn" aria-label="Halaman berikutnya">›</button>
+    <button
+      class="lightbox-arrow next"
+      id="nextBtn"
+      aria-label="Halaman berikutnya"
+      type="button"
+    >
+      ›
+    </button>
+
   </div>
 
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
   <footer>
+
     <div class="footer-line"></div>
-    <strong>BERGA COFFEE</strong>
-    <span>VINTAGE AND TIMELESS</span>
+
+    <strong>
+      BERGA COFFEE
+    </strong>
+
+    <span>
+      VINTAGE AND TIMELESS
+    </span>
+
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
